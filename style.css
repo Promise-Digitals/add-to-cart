@@ -10,6 +10,15 @@ body{
     justify-content: center;
     flex-direction: column;
 }
+::-webkit-scrollbar{
+    width: 12px;
+}
+::-webkit-scrollbar-track{
+    color: #aaa;
+}
+::-webkit-scrollbar-thumb{
+    background: #2a4fc7;
+}
 .header{
     height: 80px;
     width: 100%;
