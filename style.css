@@ -2,8 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'poppins', sans-serif;
-    /* font-size: 18px; */
+    font-family: serif;
 }
 body{
     display: flex;
@@ -13,19 +12,23 @@ body{
 }
 .header{
     height: 80px;
-    width: 70%;
-    background-color: goldenrod;
-    border-radius: 3px;
-    margin: 30px 0;
+    width: 100%;
+    background-color: #2a4fc7;
+    margin: 0 0 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 15px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
 }
 .header .logo{
-    font-size: 30px;
-    font-weight: 600;
+    font-size: 40px;
+    font-weight: 500;
     color: white;
+    letter-spacing: -15px;
 }
 .cart{
     display: flex;
@@ -37,7 +40,7 @@ body{
     width: 80px;
 }
 .fa-solid{
-    color: goldenrod;
+    color: #2a4fc7;
 }
 .cart p{
     height: 22px;
@@ -46,37 +49,52 @@ body{
     align-items: center;
     justify-content: center;
     border-radius: 22px;
-    background-color: goldenrod;
+    background-color: #2a4fc7;
     color: white;
+    font-size: 16px;
 }
 .container{
     display: flex;
-    width: 70%;
-    margin-bottom: 30px;
+    width: 100%;
+    margin: 110px auto 30px;
+    padding: 0 20px;
 }
 #root{
-    width: 60%;
+    width: 70%;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
 }
 .sidebar{
-    width: 40%;
+    width: 28%;
     border-radius: 5px;
     background-color: #eee;
     margin-left: 20px;
     padding: 15px;
     text-align: center;
+    position: fixed;
+    top: 110px;
+    right: 20px;
+    overflow-y: auto;
+    height: calc(100vh - 140px);
+    margin-bottom: 30px;
 }
 .head{
-    background-color: goldenrod;
+    background-color: #2a4fc7;
     border-radius: 3px;
-    height: 40px;
+    height: 45px;
     padding: 10px;
     margin-bottom: 20px;
     color: white;
     display: flex;
     align-items: center;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+#cartItem{
+    font-weight: 600;
 }
 .foot{
     display: flex;
@@ -85,19 +103,20 @@ body{
     padding: 10px 0;
     border-top: 1px solid #333;
     font-weight: 600;
+    font-size: 15px;
 }
 .box{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    border: 1px solid goldenrod;
+    border: 1px solid #2a4fc7;
     border-radius: 5px;
     padding: 15px;
 }
 .img-box{
     width: 100%;
-    height: 180px;
+    height: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -116,10 +135,15 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    height: 110px;
+    height: 100px;
+}
+.bottom p{
+    font-size: 18px;
+    font-weight: 600;
 }
 h2{
     font-size: 20px;
+    font-weight: 600;
     color: red;
 }
 button{
@@ -127,11 +151,12 @@ button{
     position: relative;
     border: none;
     border-radius: 5px;
-    background-color: goldenrod;
-    padding: 7px 25px;
+    background-color: #2a4fc7;
+    padding: 10px 25px;
     cursor: pointer;
     color: white;
     transition: 0.5s;
+    outline: 0;
 }
 button:hover{
     background-color: #333;
@@ -149,15 +174,15 @@ button:hover{
 .row-img{
     width: 50px;
     height: 50px;
-    border-radius: 50px;
-    border: 1px solid goldenrod;
+    border-radius: 50%;
+    border: 1px solid #2a4fc7;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .rowimg{
-    max-width: 43px;
-    max-height: 43px;
+    max-width: 40px;
+    max-height: 40px;
     border-radius: 50%;
 }
 .fa-trash:hover{
