@@ -48,6 +48,7 @@ body{
     padding: 7px 10px;
     border-radius: 3px;
     width: 80px;
+    cursor: default;
 }
 .fa-solid{
     color: #2a4fc7;
