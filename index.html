@@ -24,8 +24,18 @@
             </div>
         </div>
     </div>
-
-
+    <div class="wrapper">
+        <div class="loader"></div>
+    </div>
+    
+    <script>
+        var loader = document.querySelector(".wrapper");
+        window.addEventListener("load", function(){
+            setTimeout(function(){
+                    loader.style.display = "none";
+                }, 2500);
+        })
+    </script>
     <script src="myscript.js"></script>
 </body>
 </html>
