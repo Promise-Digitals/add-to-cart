@@ -88,6 +88,7 @@ body{
     overflow-y: auto;
     height: calc(100vh - 140px);
     margin-bottom: 30px;
+    cursor: default;
 }
 .head{
     background-color: #2a4fc7;
